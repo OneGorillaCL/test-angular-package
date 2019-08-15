@@ -1,0 +1,42 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "angular-atomic": {
+      "projectType": "library",
+      "root": "projects/angular-atomic",
+      "sourceRoot": "projects/angular-atomic/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular-atomic/tsconfig.lib.json",
+            "project": "projects/angular-atomic/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-atomic/src/test.ts",
+            "tsConfig": "projects/angular-atomic/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-atomic/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-atomic/tsconfig.lib.json",
+              "projects/angular-atomic/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "defaultProject": "angular-atomic"
+}
