@@ -1,0 +1,21 @@
+{
+  "name": "angular-atomic",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.0.3",
+    "@angular/core": "^8.0.3"
+  },
+  "main": "bundles/angular-atomic.umd.js",
+  "module": "fesm5/angular-atomic.js",
+  "es2015": "fesm2015/angular-atomic.js",
+  "esm5": "esm5/angular-atomic.js",
+  "esm2015": "esm2015/angular-atomic.js",
+  "fesm5": "fesm5/angular-atomic.js",
+  "fesm2015": "fesm2015/angular-atomic.js",
+  "typings": "angular-atomic.d.ts",
+  "metadata": "angular-atomic.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
