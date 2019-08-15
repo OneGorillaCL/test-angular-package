@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
-import { AngularAtomicComponent } from './angular-atomic.component';
 import { ButtonComponent } from './atoms/button/button.component';
 import { BannerLargeComponent } from './molecules/banner-large/banner-large.component';
 
 @NgModule({
-  declarations: [AngularAtomicComponent, ButtonComponent, BannerLargeComponent],
+  declarations: [ButtonComponent, BannerLargeComponent],
   imports: [
   ],
-  exports: [AngularAtomicComponent]
+  exports: [ButtonComponent, BannerLargeComponent]
 })
 export class AngularAtomicModule { }
